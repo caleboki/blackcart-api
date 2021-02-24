@@ -41,3 +41,27 @@ sail artisan key:generate
 sail down -v
 sail up
 ```
+
+## Database migration and seeding
+
+To create the database table, run:
+
+```
+sail artisan migrate
+```
+
+Then run these commands to seed data
+
+```
+sail artisan db:seed --class=PlatformSeeder
+sail artisan db:seed --class=ProductSeeder
+sail artisan db:seed --class=PlatformProductSeeder
+```
+
+## Tests
+
+To run feature tests run the command:
+
+```
+sail test
+```
