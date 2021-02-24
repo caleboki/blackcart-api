@@ -19,7 +19,6 @@ class StoreController extends Controller
     {
         $stores = Store::all();
         return response()->json($stores, 200);
-        //return $stores;
     }
 
     /**
@@ -27,9 +26,9 @@ class StoreController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function products(Store $store)
     {
-        //
+        return response()->json([$store->products], 200);
     }
 
     /**
@@ -64,7 +63,7 @@ class StoreController extends Controller
      */
     public function show(Store $store)
     {
-        return response()->json([$store, $store->products], 200);
+        return response()->json([$store], 200);
     }
 
     /**

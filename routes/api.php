@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/stores', 'App\Http\Controllers\StoreController@index');
 Route::get('stores/{store}', 'App\Http\Controllers\StoreController@show');
+Route::get('stores/{store}/products', 'App\Http\Controllers\StoreController@products');
 Route::post('stores', 'App\Http\Controllers\StoreController@store');
 Route::put('stores/{store}', 'App\Http\Controllers\StoreController@update');
 Route::delete('stores/{store}', 'App\Http\Controllers\StoreController@destroy');
