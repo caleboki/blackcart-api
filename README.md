@@ -65,3 +65,11 @@ To run feature tests run the command:
 ```
 sail test
 ```
+
+## Endpoints
+
+- App URL: ```http://localhost```
+- List Platforms (GET): ```http://localhost/api/stores```
+- View Platform (GET): ```http://localhost/api/stores/{store}```
+- Create new Platform (POST): ```http://localhost/api/stores```
+- Delete Platform (Delete): ```http://localhost/api/stores/{stores}```
